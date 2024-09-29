@@ -1,0 +1,130 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Hex section */
+.hex,
+.rgb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hex {
+    background-color: grey;
+    padding: 30px;
+}
+
+.rgb {
+    background-color: rgb(84, 136, 5);
+    padding: 30px;
+}
+
+#hexResult,
+#rgbResult {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    color: #5B489E;
+}
+
+#hexResult {
+    color: #5B489E;
+}
+
+#rgbResult {}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* RGB Sliders */
+.rgb input[type="range"] {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.rgb label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.rgb div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    #hexResult,
+    #rgbResult {
+        width: 80px;
+        height: 80px;
+        font-size: 1rem;
+    }
+}
